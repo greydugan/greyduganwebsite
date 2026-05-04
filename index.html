@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grey Dugan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #faf8f4;
+      color: #1e1a14;
+      font-family: 'Jost', system-ui, sans-serif;
+      font-size: 18px;
+      line-height: 1.55;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 28px 80px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 9vw, 5rem);
+      font-weight: 500;
+      font-style: italic;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .location {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #7a6e5f;
+      margin-bottom: 40px;
+    }
+
+    .photo-placeholder {
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 3/2;
+      background: linear-height(135deg, #d4c9b0, #b8a98e);
+      background: linear-gradient(135deg, #d4c9b0 0%, #b8a98e 100%);
+      margin-bottom: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Swap the placeholder above for your photo like this:
+       <img src="photo.jpg" alt="Grey Dugan" class="band-photo" />
+
+       And add this to the CSS:
+       .band-photo { width: 100%; max-width: 560px; display: block;
+                     margin-bottom: 52px; filter: sepia(15%) contrast(1.03); }
+    */
+
+    .photo-placeholder span {
+      font-family: 'Courier Prime', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9a8e7a;
+    }
+
+    h2 {
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 500;
+      font-style: normal;
+      margin-bottom: 6px;
+    }
+
+    .with {
+      font-style: italic;
+      color: #7a6e5f;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .show {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 5px;
+      flex-wrap: wrap;
+    }
+
+    .show-info { flex: 1; }
+
+    a.tickets {
+      color: #8a5520;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-decoration: underline;
+    }
+
+    a.tickets:hover { color: #c8873a; }
+
+    section { margin-bottom: 52px; }
+
+    .music-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .music-links a {
+      color: #8a5520;
+      font-style: italic;
+      text-decoration: underline;
+      font-size: 18px;
+    }
+
+    .music-links a:hover { color: #c8873a; }
+
+    .music-links .sep {
+      color: #b5a48a;
+      font-style: normal;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #c8b99a;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7a6e5f;
+      text-decoration: none;
+    }
+
+    footer a:hover { color: #8a5520; }
+
+    footer .copyright {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: #b5a48a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Grey Dugan</h1>
+  <p class="location">Los Angeles, California</p>
+
+  <!-- Replace with your photo once you have one:
+       <img src="photo.jpg" alt="Grey Dugan" class="band-photo" /> -->
+  <div class="photo-placeholder">
+    <span>[ photo ]</span>
+  </div>
+
+  <section>
+    <h2>Upcoming Shows</h2>
+    <div class="show">
+      <span class="show-info">May 27 — Los Angeles, CA — Oblivion</span>
+      <a class="tickets" href="https://TICKET-LINK" target="_blank">tickets</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Music</h2>
+    <div class="music-links">
+      <a href="https://greydugan.bandcamp.com" target="_blank">Bandcamp</a>
+      <span class="sep">,</span>
+      <a href="https://open.spotify.com/artist/YOUR-ID" target="_blank">Spotify</a>
+      <span class="sep">,</span>
+      <a href="https://music.apple.com/us/artist/YOUR-ID" target="_blank">Apple Music</a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="contact.html">Contact</a>
+    <span class="copyright">© 2026 Grey Dugan</span>
+  </footer>
+
+</body>
+</html>
